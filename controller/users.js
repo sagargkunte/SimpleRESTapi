@@ -5,7 +5,7 @@ let users = [];
 
 export const createUser = (req,res) => {
     console.log('POST route reached');
-    // console.log(req.body);
+    //* console.log(req.body);
     const user = req.body;
     users.push({...user,id:uuidv4()});
     res.send(`user name is ${user.name} and age ${user.age} added to the DataBase`);
